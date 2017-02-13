@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Template Demo</title>
+</head>
+<body>
+
+<template>
+  <div>This content is <strong>not</strong> the part of DOM</div>
+</template>
+
+<div class="container1"></div>
+<div class="container2"></div>
+
+<script>
+  const template = document.querySelector("template");
+
+  const templateClone1 = document.importNode(template.content, true);
+  document.querySelector('.container1').appendChild(templateClone1);
+
+  const templateClone2 = document.importNode(template.content, true);
+  document.querySelector('.container2').appendChild(templateClone2);
+</script>
+
+</body>
+</html>

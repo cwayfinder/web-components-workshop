@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Imports</title>
+
+  <link rel="import" href="http://polygit.org/components/google-map/google-map.html">
+  <link rel="import" href="http://polygit.org/components/paper-button/paper-button.html">
+  <link rel="import" href="http://polygit.org/components/gold-cc-input/gold-cc-input.html">
+
+  <style>
+    google-map {
+      height: 300px;
+    }
+
+    gold-cc-input {
+      width: 230px;
+    }
+  </style>
+</head>
+<body>
+
+
+<google-map fit-to-marker api-key="AIzaSyAI0nIDGQpGeF9OlrV_WNeJ1GogUuppvpc">
+  <google-map-marker latitude="37.78" longitude="-122.4" draggable="true"></google-map-marker>
+</google-map>
+
+
+<paper-button raised>Click me!</paper-button>
+
+
+<gold-cc-input label="Card number" auto-validate></gold-cc-input>
+
+</body>
+</html>
